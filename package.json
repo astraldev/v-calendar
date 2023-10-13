@@ -1,0 +1,69 @@
+{
+  "author": {
+    "name": "Nathan Reyes",
+    "email": "nathanreyes@me.com"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "bugs": {
+    "url": "https://github.com/nathanreyes/v-calendar/issues"
+  },
+  "description": "A clean and extendable plugin for building simple attributed calendars in Vue.js.",
+  "engines": {
+    "node": ">= 18.0.0",
+    "pnpm": ">= 8.7.6"
+  },
+  "homepage": "https://vcalendar.io",
+  "keywords": [
+    "vue",
+    "vuejs",
+    "plugin",
+    "calendar",
+    "datepicker",
+    "date picker",
+    "highlights",
+    "dots",
+    "bars",
+    "indicators"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathanreyes/v-calendar.git"
+  },
+  "license": "MIT",
+  "version": "0.9.7",
+  "name": "v-calendar",
+  "type": "module",
+  "peerDependencies": {
+    "vue": "^3.3.4"
+  },
+  "private": true,
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.4.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "sass": "^1.69.3",
+    "vite": "^4.4.11"
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "main": "./dist/v-calendar.umd.js",
+  "module": "./dist/v-calendar.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/v-calendar.es.js",
+      "require": "./dist/v-calendar.umd.js"
+    },
+    "./style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
+  },
+  "files": [
+    "dist/*"
+  ]
+}
